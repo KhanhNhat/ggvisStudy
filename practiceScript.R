@@ -10,3 +10,7 @@ mtcars %>%
 mtcars %>%
   ggvis(x =~ wt, y =~ mpg, fill =~ factor(cyl)) %>%
   layer_points()
+
+mtcars %>%
+  ggvis(x =~ wt, y =~ mpg, fill =~ factor(cyl), shape := 'cross') %>%
+  layer_points()
